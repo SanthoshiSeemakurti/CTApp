@@ -1,0 +1,11 @@
+{
+  "platform": "android",
+  "appium:platformVersion": "12",
+  "android_app_package": "com.cottontradersltd.cottontraders.chrome",
+  "android_app_activity": ".CTApp",
+  "appium:automationName": "UIAutomator",
+  "avd_launch_timeout": 180000,
+  "android_device_name": "emulator-5554",
+  "android_emulator": "yes",
+  "appium_url": "http://0.0.0.1:4723"
+}
