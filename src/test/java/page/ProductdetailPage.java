@@ -12,11 +12,11 @@ public class ProductdetailPage extends BaseScreen {
      }
 
      // Locators and actions
-     public static void SeventhItem(String seventhItem) {
+     public static void Item(String Item){
           mobileActions.verticalSwipeByPercentages(0.6, 0.3, 0.5);
           mobileActions.verticalSwipeByPercentages(0.6, 0.3, 0.5);
-          AndroidElement eleSeventhItem = (AndroidElement) driver.findElement(By.xpath("(//*[@index=\"0\" and @class=\"android.widget.ImageView\" and @resource-id=\"com.cottontradersltd.cottontraders:id/product_card_image\"])[1]"));
-          eleSeventhItem.click();
+          AndroidElement eleItem = (AndroidElement) driver.findElement(By.xpath("(//*[@index=\"0\" and @class=\"android.widget.ImageView\" and @resource-id=\"com.cottontradersltd.cottontraders:id/product_card_image\"])[1]"));
+          eleItem.click();
      }
 
 
@@ -35,7 +35,12 @@ public class ProductdetailPage extends BaseScreen {
           AndroidElement eleSnakeBar = (AndroidElement) driver.findElement(By.id("com.cottontradersltd.cottontraders:id/snackbar_text"));
      }
      public static void SizeSelector() {
-          AndroidElement eleSize = (AndroidElement) driver.findElement(By.xpath(("")));
+          AndroidElement eleSize = (AndroidElement) driver.findElement(By.xpath(("//*[@index=\"0\" and @class = \"android.widget.LinearLayout\" and @resource-id=\"com.cottontradersltd.cottontraders:id/item_picker_container\"]")));
           eleSize.click();
      }
+     public static void ViewBag() {
+          AndroidElement eleViewBag = (AndroidElement) driver.findElement(By.id("com.cottontradersltd.cottontraders:id/action_bag"));
+          eleViewBag.click();
+     }
 }
+

@@ -13,16 +13,13 @@ private WebDriver driver;
 private Steps steps;
 
 public MobileHomePage mobileHomePage = new MobileHomePage();
-public ShopBottomNavigation shopBottomNavigation= new ShopBottomNavigation();
+public ShopBottomNavigation shopBottomNavigation = new ShopBottomNavigation();
 //public MobileActions mobileActionUtils = new MobileActionUtils();
 
 
     @Given("I launch the app Cotton Traders")
     public void i_launch_the_app_cotton_traders() {
         mobileHomePage.launchApp();
-
-//        WebElement LaunchCottonTradersAppLink =driver.findElement(new MobileBy.ByAccessibilityId ("Cotton Traders"));
-//        LaunchCottonTradersAppLink.click();
         }
     @When("I Navigate to {string} bottom navigation")
     public void i_navigate_to_bottom_navigation(String string) {
@@ -30,15 +27,12 @@ public ShopBottomNavigation shopBottomNavigation= new ShopBottomNavigation();
 
     }
     @When("I Navigate to {string}")
-    public void i_navigate_to(String string) {
-        ShopBottomNavigation.NavigatingtoSubcategory("Men>Clothing>Knitwear");
-
-
+    public void i_navigate_to(String string) throws InterruptedException {
+        ShopBottomNavigation.NavigatingtoSubcategory ("Men>Clothing>Knitwear");
     }
-    @Then("I Select the Seventh item displayed")
-    public void i_select_the_seventh_item_displayed() {
-        ProductdetailPage.SeventhItem("2");
-
+    @Then("I Select the {string} item displayed")
+    public void i_select_the_item_displayed(String string) {
+        ProductdetailPage.Item("Seventh");
     }
     @Then("I Select a colour")
     public void i_select_a_colour() {
@@ -59,6 +53,6 @@ public ShopBottomNavigation shopBottomNavigation= new ShopBottomNavigation();
     }
     @Then("I View Bag")
     public void i_view_bag() {
-
+        ProductdetailPage.ViewBag();
     }
 }

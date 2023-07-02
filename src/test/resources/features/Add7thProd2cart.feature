@@ -6,7 +6,7 @@ Feature: Add 7th item to the bag
     Given I launch the app Cotton Traders
     When I Navigate to "Shop" bottom navigation
     And I Navigate to "Men collapsed>Clothing collapsed>Knitwear"
-    Then I Select the Seventh item displayed
+    Then I Select the "Seventh" item displayed
     And I Select a colour
     And I Add to Bag
     And I select a size
