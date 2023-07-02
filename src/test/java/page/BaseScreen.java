@@ -6,9 +6,9 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseScreen {
-    protected AndroidDriver<MobileElement> driver;
+    protected static AndroidDriver<MobileElement> driver;
     protected WebDriverWait wait;
-    protected MobileActions mobileActions;
+    protected static MobileActions mobileActions;
 
     public BaseScreen(AndroidDriver<MobileElement> driver) {
         this.driver = driver;
