@@ -5,11 +5,13 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.By;
 
-public class ShopBottomNavigation extends BaseScreen {
+public class ShopBottomNavigation extends BaseScreen{
+
 
     public ShopBottomNavigation(AndroidDriver<MobileElement> driver) {
         super(driver);
     }
+
     public static void BottomNavigation(String bottomNavigation) {
         AndroidElement eleBottomNav = (AndroidElement) driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=" + bottomNavigation + "]"));
     }

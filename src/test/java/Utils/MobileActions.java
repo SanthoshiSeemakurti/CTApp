@@ -18,6 +18,10 @@ import static java.time.Duration.ofSeconds;
 public class MobileActions extends AndroidUtils {
     private AndroidDriver<MobileElement> driver;
 
+    public MobileActions(AppiumDriver driver) {
+        super(driver);
+    }
+
     /**
      * Constructor to initialize the {@link  } object
      *
@@ -29,9 +33,6 @@ public class MobileActions extends AndroidUtils {
      *
      * @param driver The {@link AppiumDriver} object
      */
-    public MobileActions(AppiumDriver driver) {
-        super(driver);
-    }
 
     //Tap to an element for 250 milliseconds
     public void tapByElement (AndroidElement androidElement) {
