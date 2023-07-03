@@ -17,7 +17,7 @@ import java.io.File;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/features"},
-        glue = {"StepDefinitions"},
+        glue = {"StepDef"},
         tags = "@CTApp",
         format = {
                 "pretty",
