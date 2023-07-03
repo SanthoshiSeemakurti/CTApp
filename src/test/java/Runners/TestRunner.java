@@ -14,6 +14,8 @@ import org.testng.annotations.Test;
 
 import java.io.File;
 
+import static page.BaseScreen.driver;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/features"},
@@ -32,9 +34,8 @@ public class TestRunner {
 
                 private TestNGCucumberRunner testNGCucumberRunner;
                 /*
-                 * AppiumDriverFactory appiumDriverFactory =
-                 * AppiumDriverFactory.getInstanceOfAppiumDriverFactory(); AppiumDriver driver =
-                 * appiumDriverFactory.getDriver();
+                 * AppiumDriverFactory = AppiumDriverFactory.getInstanceOfAppiumDriverFactory();
+                 * AppiumDriver driver = appiumDriverFactory.getDriver();
                  */
 
                 @BeforeClass(alwaysRun = true)
@@ -54,7 +55,7 @@ public class TestRunner {
 
                 @AfterClass(alwaysRun = true)
                 public void tearDownClass() throws Exception {
-                        //driver.quit();
+                        driver.quit();
                         Reporter.loadXMLConfig(new File(ConfigFileReader.getConfigPropertyVal("reportConfigPath")));
                         testNGCucumberRunner.finish();
 
