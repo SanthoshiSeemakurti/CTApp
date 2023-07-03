@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "e793fd8e-29f6-49f1-86cc-a0103f76b736",
+		"name": "CTApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19780805"
+	},
+	"item": [
+		{
+			"name": "ViewProductDetails_positive",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "xrtowuV1eTz7o4SsECS.xSUckfWaM_SbIlUEq.wDDsM-1688406069-0-Aaks4uh8uvcv7JUwHXjGOsEpU8YATQsOZLh0Ib3Yr1v%2B5BlJJUmD3oPeqAKd%2B5O0tHcZGx5U4Qoam4rqrLblERE%3D",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Client-Address",
+						"value": "192.168.0.4:53454",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Remote-Address",
+						"value": "platform.poq.io/172.67.43.3:443",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-id",
+						"value": " 197",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": " f9ae05f4-ca41-4b39-866b-e68be239d810",
+						"type": "text"
+					},
+					{
+						"key": "currency-code",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-country-identifier",
+						"value": " GB",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " Application/Json",
+						"type": "text"
+					},
+					{
+						"key": "platform",
+						"value": " Android",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": " 0GJX30myo3ijwNEHlDu73kGk/8mP46YnulAv6BuyNEQ=",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": " CottonTraders/23.1.0 Android/30",
+						"type": "text"
+					},
+					{
+						"key": "accept-encoding",
+						"value": " gzip",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://platform.poq.io/clients/cotton-traders/products?ids=AL11437&gender=men",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"poq",
+						"io"
+					],
+					"path": [
+						"clients",
+						"cotton-traders",
+						"products"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "AL11437"
+						},
+						{
+							"key": "gender",
+							"value": "men"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewProductDetails_negative",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cache-Control",
+						"value": "xrtowuV1eTz7o4SsECS.xSUckfWaM_SbIlUEq.wDDsM-1688406069-0-Aaks4uh8uvcv7JUwHXjGOsEpU8YATQsOZLh0Ib3Yr1v%2B5BlJJUmD3oPeqAKd%2B5O0tHcZGx5U4Qoam4rqrLblERE%3D",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Client-Address",
+						"value": "192.168.0.4:53454",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Remote-Address",
+						"value": "platform.poq.io/172.67.43.3:443",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-id",
+						"value": " 197",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": " f9ae05f4-ca41-4b39-866b-e68be239d810",
+						"type": "text"
+					},
+					{
+						"key": "currency-code",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-country-identifier",
+						"value": " GB",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " Application/Json",
+						"type": "text"
+					},
+					{
+						"key": "platform",
+						"value": " Android",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": " 0GJX30myo3ijwNEHlDu73kGk/8mP46YnulAv6BuyNEQ=",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": " CottonTraders/23.1.0 Android/30",
+						"type": "text"
+					},
+					{
+						"key": "accept-encoding",
+						"value": " gzip",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://platform.poq.io/clients/cotton-traders/products?ids=AL114&gender=men",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"poq",
+						"io"
+					],
+					"path": [
+						"clients",
+						"cotton-traders",
+						"products"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "AL114"
+						},
+						{
+							"key": "gender",
+							"value": "men"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AccountDetails_positive",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "platform",
+						"value": " Android",
+						"type": "text"
+					},
+					{
+						"key": "version-code",
+						"value": " 23.2",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-id",
+						"value": " 197",
+						"type": "text"
+					},
+					{
+						"key": "poq-user-id",
+						"value": " 77268f31-d8b0-41df-aed1-76e960b57b45",
+						"type": "text"
+					},
+					{
+						"key": "currency-code",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": " f9ae05f4-ca41-4b39-866b-e68be239d810",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": " Basic dGVzdC5hYmNAdGVzdC5jb206VElDVFUrc3FTdEw5M01oT0ZCcWYrR1dQRS83TTZIZDY=",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": " sq15QP0rwj94HVhcrsgzil8SFJFju1thOtN/CpcVu2o=",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": " CottonTraders/23.1.0 Android/30",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " application/json; charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "content-length",
+						"value": " 294",
+						"type": "text"
+					},
+					{
+						"key": "accept-encoding",
+						"value": " gzip",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"externalAddressId\": \"1a9dd4c6-225c-4a66-991d-3f12f2b03752\",\n\t\"firstName\": \"Testabc\",\n\t\"lastName\": \"Testabc\",\n\t\"address1\": \"3\",\n\t\"address2\": null,\n\t\"city\": \"Munich\",\n\t\"county\": \"Germany \",\n\t\"country\": \"DE\",\n\t\"phone\": \"01764266325\",\n\t\"postCode\": \"81739\",\n\t\"state\": \"Germany \",\n\t\"houseNumber\": \"Niemöllerallee 15\",\n\t\"isDefaultBilling\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://platform.poq.io/clients/cotton-traders/account/details/197/acb718c8-1688-4e6b-92d6-051fb87f9143",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"poq",
+						"io"
+					],
+					"path": [
+						"clients",
+						"cotton-traders",
+						"account",
+						"details",
+						"197",
+						"acb718c8-1688-4e6b-92d6-051fb87f9143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AccountDetails_negative",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "platform",
+						"value": " Android",
+						"type": "text"
+					},
+					{
+						"key": "version-code",
+						"value": " 23.2",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-id",
+						"value": " 197",
+						"type": "text"
+					},
+					{
+						"key": "poq-user-id",
+						"value": " 77268f31-d8b0-41df-aed1-76e960b57b45",
+						"type": "text"
+					},
+					{
+						"key": "currency-code",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": " f9ae05f4-ca41-4b39-866b-e68be239d810",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": " Basic dGVzdC5hYmNAdGVzdC5jb206VElDVFUrc3FTdEw5M01oT0ZCcWYrR1dQRS83TTZIZDY=",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": " sq15QP0rwj94HVhcrsgzil8SFJFju1thOtN/CpcVu2o=",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": " CottonTraders/23.1.0 Android/30",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " application/json; charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "content-length",
+						"value": " 294",
+						"type": "text"
+					},
+					{
+						"key": "accept-encoding",
+						"value": " gzip",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"externalAddressId\": \"1a9dd4c6-225c-4a66-991d-3f12f2b03752\",\n\t\"firstName\": \"Testabc\",\n\t\"lastName\": \"Testabc\",\n\t\"address1\": \"3\",\n\t\"address2\": null,\n\t\"city\": \"Munich\",\n\t\"county\": \"Germany \",\n\t\"country\": \"DE\",\n\t\"phone\": \"01764266325\",\n\t\"postCode\": \"81739\",\n\t\"state\": \"Germany \",\n\t\"houseNumber\": \"Niemöllerallee 15\",\n\t\"isDefaultBilling\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://platform.poq.io/clients/cotton-traders/account/details/197/acb718c8-1688-4e6b-92d6-051fb87f9143",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"poq",
+						"io"
+					],
+					"path": [
+						"clients",
+						"cotton-traders",
+						"account",
+						"details",
+						"197",
+						"acb718c8-1688-4e6b-92d6-051fb87f9143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register_negative",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "platform",
+						"value": " Android",
+						"type": "text"
+					},
+					{
+						"key": "version-code",
+						"value": " 23.2",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-id",
+						"value": " 197",
+						"type": "text"
+					},
+					{
+						"key": "poq-user-id",
+						"value": " 77268f31-d8b0-41df-aed1-76e960b57b45",
+						"type": "text"
+					},
+					{
+						"key": "currency-code",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": " f9ae05f4-ca41-4b39-866b-e68be239d810",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": " ZY3jKopJkTSxQOuo38jIblRf4Gc7g7V+q7n+XDtUe1M=",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": " CottonTraders/23.1.0 Android/30",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " application/json; charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "content-length",
+						"value": " 455",
+						"type": "text"
+					},
+					{
+						"key": "accept-encoding",
+						"value": " gzip",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"credentials\": {\n        \"password\": \"test.abc@test.com\",\n        \"username\": \"test.abc@test.com\"\n    },\n    \"isPromotion\": true,\n    \"profile\": {\n        \"allowDataSharing\": true,\n        \"title\": \"Miss\",\n        \"accessToken\": \"\",\n        \"cookies\": [\n            {\n                \"commentUrl\": null,\n                \"comment\": null,\n                \"domain\": \".cottontraders.com\",\n                \"expireDate\": \"1970-01-01T00:00:10Z\",\n                \"isHttpOnly\": false,\n                \"isSecure\": true,\n                \"isSessionOnly\": false,\n                \"name\": \"dwsecuretoken_9f1d6f3623810c418beb60ae96681411\",\n                \"path\": \"/\",\n                \"port\": null,\n                \"rawValue\": \"dwsecuretoken_9f1d6f3623810c418beb60ae96681411=\\\"\\\"; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; SameSite=None\",\n                \"value\": \"\\\"\\\"\"\n            },\n            {\n                \"commentUrl\": null,\n                \"comment\": null,\n                \"domain\": \".cottontraders.com\",\n                \"expireDate\": null,\n                \"isHttpOnly\": true,\n                \"isSecure\": true,\n                \"isSessionOnly\": false,\n                \"name\": \"dwsid\",\n                \"path\": \"/\",\n                \"port\": null,\n                \"rawValue\": \"dwsid=mmEJGjg1HftO1P4rbyTcWm1KjY_-3bCf6xty0S0eHwzIlqegJ9r_3YWkj4meNAirhQ6wOAB2B5WmtKFSCemd-g==; Path=/; Secure; HttpOnly; SameSite=None\",\n                \"value\": \"mmEJGjg1HftO1P4rbyTcWm1KjY_-3bCf6xty0S0eHwzIlqegJ9r_3YWkj4meNAirhQ6wOAB2B5WmtKFSCemd-g==\"\n            },\n            {\n                \"commentUrl\": null,\n                \"comment\": null,\n                \"domain\": \".cottontraders.com\",\n                \"expireDate\": null,\n                \"isHttpOnly\": false,\n                \"isSecure\": true,\n                \"isSessionOnly\": false,\n                \"name\": \"__cq_dnt\",\n                \"path\": \"/\",\n                \"port\": null,\n                \"rawValue\": \"__cq_dnt=0; Path=/; Secure; SameSite=None\",\n                \"value\": \"0\"\n            },\n            {\n                \"commentUrl\": null,\n                \"comment\": null,\n                \"domain\": \".cottontraders.com\",\n                \"expireDate\": null,\n                \"isHttpOnly\": false,\n                \"isSecure\": true,\n                \"isSessionOnly\": false,\n                \"name\": \"dw_dnt\",\n                \"path\": \"/\",\n                \"port\": null,\n                \"rawValue\": \"dw_dnt=0; Path=/; Secure; SameSite=None\",\n                \"value\": \"0\"\n            },\n            {\n                \"commentUrl\": null,\n                \"comment\": \"\\\"Demandware anonymous cookie for site Sites-cotton-uk-Site\\\"\",\n                \"domain\": \".cottontraders.com\",\n                \"expireDate\": \"2023-12-30T18:16:21Z\",\n                \"isHttpOnly\": false,\n                \"isSecure\": true,\n                \"isSessionOnly\": false,\n                \"name\": \"dwanonymous_9f1d6f3623810c418beb60ae96681411\",\n                \"path\": \"/\",\n                \"port\": null,\n                \"rawValue\": \"dwanonymous_9f1d6f3623810c418beb60ae96681411=abqGLQGIS4bgZAJmc5AAQLNak7; Version=1; Comment=\\\"Demandware anonymous cookie for site Sites-cotton-uk-Site\\\"; Max-Age=15552000; Expires=Sat, 30-Dec-2023 18:16:21 GMT; Path=/; Secure; SameSite=None\",\n                \"value\": \"abqGLQGIS4bgZAJmc5AAQLNak7\"\n            }\n        ],\n        \"email\": \"test.abc@test.com\",\n        \"employeeId\": \"\",\n        \"encryptedPassword\": \"\",\n        \"expressCheckout\": false,\n        \"firstName\": \"Testabc\",\n        \"isBagMerged\": false,\n        \"isBagMergedMessage\": \"\",\n        \"isPromotion\": true,\n        \"lastName\": \"Testabc\",\n        \"loyaltyCardNumber\": \"\",\n        \"phone\": \"01234567891\",\n        \"refreshToken\": \"123\",\n        \"storeId\": \"test123\",\n        \"username\": \"test\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://platform.poq.io/clients/cotton-traders/account/register/197/77268f31-d8b0-41df-aed1-76e960b57b45",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"poq",
+						"io"
+					],
+					"path": [
+						"clients",
+						"cotton-traders",
+						"account",
+						"register",
+						"197",
+						"77268f31-d8b0-41df-aed1-76e960b57b45"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin_negative",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "platform",
+						"value": " Android",
+						"type": "text"
+					},
+					{
+						"key": "version-code",
+						"value": " 23.2",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-id",
+						"value": " 197",
+						"type": "text"
+					},
+					{
+						"key": "poq-user-id",
+						"value": " e7b0ae20-e65f-4e93-a056-7b44c5ef4bcf",
+						"type": "text"
+					},
+					{
+						"key": "currency-code",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-currency-identifier",
+						"value": " GBP",
+						"type": "text"
+					},
+					{
+						"key": "poq-app-identifier",
+						"value": " f9ae05f4-ca41-4b39-866b-e68be239d810",
+						"type": "text"
+					},
+					{
+						"key": "poq-auth",
+						"value": " YQs9k1MpEp8lOwpdDgdIBUFjLiCPLG5G6PfGsPXIzNE=",
+						"type": "text"
+					},
+					{
+						"key": "user-agent",
+						"value": " CottonTraders/23.1.0 Android/30",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": " application/json; charset=UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "content-length",
+						"value": " 63",
+						"type": "text"
+					},
+					{
+						"key": "accept-encoding",
+						"value": " gzip",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"test.abc@test.com\",\n\t\"username\": \"test.abc@test.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://platform.poq.io/clients/cotton-traders/account/login/197/e7b0ae20-e65f-4e93-a056-7b44c5ef4bcf",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"poq",
+						"io"
+					],
+					"path": [
+						"clients",
+						"cotton-traders",
+						"account",
+						"login",
+						"197",
+						"e7b0ae20-e65f-4e93-a056-7b44c5ef4bcf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
