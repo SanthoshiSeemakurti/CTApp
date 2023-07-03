@@ -19,7 +19,6 @@ public class ProductdetailPage extends BaseScreen {
           eleItem.click();
      }
 
-
      public static void ColourSelector(){
           mobileActions.verticalSwipeByPercentages(0.6, 0.3, 0.5);
           AndroidElement eleColour = (AndroidElement) driver.findElement(By.xpath("//*[@index=\"1\" and @resource-id=\"com.cottontradersltd.cottontraders:id/item_picker\"]"));

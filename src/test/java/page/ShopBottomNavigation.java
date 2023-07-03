@@ -16,8 +16,8 @@ public class ShopBottomNavigation extends BaseScreen{
         AndroidElement eleBottomNav = (AndroidElement) driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=" + bottomNavigation + "]"));
     }
 
-    public static void NavigatingtoSubcategory(String subcategoryValue) throws InterruptedException {
-        //subcategoryValue ="men>clothing>knitwear";
+    public static void NavigatingtoSubcategory(String subcategoryValue) {
+       try{ //subcategoryValue ="men>clothing>knitwear";
         String[] arrayCategory = subcategoryValue.split(">");
         AndroidElement headCat = (AndroidElement) driver.findElement(By.id(arrayCategory[0]));
         headCat.click();
@@ -28,7 +28,8 @@ public class ShopBottomNavigation extends BaseScreen{
         mobileActions.verticalSwipeByPercentages(.6, .3, .5);
         AndroidElement subSubCat = (AndroidElement) driver.findElement(By.id(arrayCategory[2]));
         subSubCat.click();
-        mobileActions.wait();
+        mobileActions.wait();}
+       catch(InterruptedException e){e.printStackTrace();};
     }
 
 }

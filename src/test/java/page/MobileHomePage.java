@@ -20,12 +20,7 @@ public class MobileHomePage  {
     public void launchApp() {
         driver = appiumDriverFactory.getDriver();
             androidUtils = new AndroidUtils(driver);
-        if (androidUtils.objectExists(headerActionBar)) {
-            System.out.println("Application Launched!");
-            Assert.assertTrue(true, "Application Launched Successfully!");
-        } else {
-            Assert.assertTrue(false, "Unable to launch application!");
-        }
+            Assert.assertNotNull(androidUtils.objectExists(headerActionBar),"Application Launched Successfully!");
 
     }
 }

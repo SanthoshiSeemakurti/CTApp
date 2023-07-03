@@ -20,7 +20,7 @@ public MobileHomePage mobileHomePage = new MobileHomePage();
         ShopBottomNavigation.BottomNavigation("Shop");
     }
     @When("I Navigate to {string}")
-    public void i_navigate_to(String string) throws InterruptedException {
+    public void i_navigate_to(String string) {
         ShopBottomNavigation.NavigatingtoSubcategory ("Men>Clothing>Knitwear");
     }
     @Then("I Select the {string} item displayed")
