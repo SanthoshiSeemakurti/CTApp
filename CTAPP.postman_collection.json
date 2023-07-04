@@ -301,7 +301,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://platform.poq.io/clients/cotton-traders/account/details/197/acb718c8-1688-4e6b-92d6-051fb87f9143",
+					"raw": "https://platform.poq.io/clients/cotton-traders/account/register/197/77268f31-d8b0-41df-aed1-76e960b57b45",
 					"protocol": "https",
 					"host": [
 						"platform",
@@ -312,9 +312,9 @@
 						"clients",
 						"cotton-traders",
 						"account",
-						"details",
+						"register",
 						"197",
-						"acb718c8-1688-4e6b-92d6-051fb87f9143"
+						"77268f31-d8b0-41df-aed1-76e960b57b45"
 					]
 				}
 			},
@@ -362,8 +362,9 @@
 					},
 					{
 						"key": "authorization",
-						"value": " Basic dGVzdC5hYmNAdGVzdC5jb206VElDVFUrc3FTdEw5M01oT0ZCcWYrR1dQRS83TTZIZDY=",
-						"type": "text"
+						"value": " Basic dGVzdC5hYmNAdGVzdC5jb206VElDVFUrc3FTdEw5M01oT0ZCcWYrR1dQRS83T",
+						"type": "text",
+						"disabled": true
 					},
 					{
 						"key": "poq-auth",
@@ -421,7 +422,7 @@
 			"response": []
 		},
 		{
-			"name": "Register_negative",
+			"name": "Register_PositiveFailed",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -516,7 +517,7 @@
 			"response": []
 		},
 		{
-			"name": "Signin_negative",
+			"name": "Signin_PositiveFailed",
 			"request": {
 				"method": "POST",
 				"header": [
