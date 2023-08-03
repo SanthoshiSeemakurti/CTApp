@@ -2,7 +2,7 @@
 Feature: Add 7th item to the bag
 
   Scenario: Add 7th item from Men > Clothing > Knitwear category
-  (if not any category which has more than 7 items in the list) to the cart.
+
     Given I launch the app Cotton Traders
     When I Navigate to "Shop" bottom navigation
     And I Navigate to "Men collapsed>Clothing collapsed>Knitwear"
